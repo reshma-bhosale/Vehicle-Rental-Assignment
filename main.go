@@ -5,7 +5,7 @@ import (
 	_"net/http"
 	"github.com/gin-gonic/gin"
 	"github.com/reshma-bhosale/Vehicle-Rental-Assignment/models"
-	"github.com/reshma-bhosale/Vehicle-Rental-Assignment/handler"
+	"github.com/reshma-bhosale/Vehicle-Rental-Assignment/handlers"
 )
 
 func main()  {
@@ -15,6 +15,7 @@ func main()  {
 	fmt.Println(c.Name)
 
 	r := gin.Default()
-	r.GET("/ping", handler.handle)
+	r.POST("/customers", handler.AddNewCustomer)
+	r.GET("/customer", handler.GetCustomers)
 	r.Run()
 }
