@@ -1,9 +1,9 @@
 package handler 
 
 import (
-	"fmt"
+	_"fmt"
 	_"net/http"
-	"os"
+	_"os"
 	"github.com/gin-gonic/gin"
 	"github.com/reshma-bhosale/Vehicle-Rental-Assignment/models"
 
